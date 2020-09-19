@@ -53,6 +53,7 @@ let App = () => {
         <Route exact path={"/locales"} component={Locales}/>
         <Route exact path={"/menu"} component={Menu} />
         <Route exact path={"/"} component={Home} />
+        <Route exact path={"/fastfood-restaurant"} component={Home} />
         <Route component={NotFound} />
       </Switch>
     </Router>
