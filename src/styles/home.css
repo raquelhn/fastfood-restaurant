@@ -1,0 +1,491 @@
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0
+  
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+a{
+    text-decoration: none;
+}
+
+ /* Center website */
+main{
+  max-width: 1000px;
+  margin: auto;
+  background: darken(white, 5%);
+  padding:30px 20px;
+  margin-top: 10px;
+}
+
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  color:rgba(23,23,23,.8);
+}
+
+h2{
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 10%;
+  line-height: 1.5;
+  text-align: center;
+  color:rgba(23,23,23,.8);
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color:#413E4A;
+  font-weight:200
+}
+
+h4{
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #e74c3c;
+  text-align: center;
+  line-height: 1.2;
+  padding-top: 5px;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.flex{
+  display: flex;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
+  z-index: 3;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav .logo{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  float: left;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  float: right;
+}
+
+nav li{
+    display: inline-block;
+    padding: 2em;
+    text-align: center;
+    transition: all .2s;
+}
+
+nav li:last-child {
+  padding-right: 4em;
+  margin-right:0
+}
+
+nav a{
+  color: rgba(230,154,35,1);
+  transition: all .3s;
+  font-size:0.9rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:0.15rem;
+  word-spacing:0.3rem
+}
+
+nav a:hover {
+  color: #DDD;
+}
+
+
+/*el id */
+#nav-bg {
+  background: #222;
+  position: fixed;
+  height: 5em;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+
+
+header h1 {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  text-align: center;
+  color:#FFF;
+  margin:0;
+ 
+}
+
+header p{
+font-size:1.3rem;
+color:#FFF492;
+line-height:1.5;
+}
+
+
+.btn-agregar{
+  background-color:#FFC53D;
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  margin:20px auto;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  border: 1px solid #FFC53D;
+  background-color:#FFC53D ;
+}
+
+.btn-agregar:hover{
+  background-color: #c66;
+  border:none
+}
+
+/* Add padding BETWEEN each column (if you want) */
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  
+  /* display: none; Hide columns by default */
+}
+
+.column img{
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.column h4{
+    padding-bottom: 1%;
+}
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding-bottom: 20px;
+  text-align: center;
+  
+}
+
+.content p{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.botones{
+  display: flex;
+  max-width:80%;
+  margin: 10px auto;
+}
+
+.botones input{
+  width: 60px;
+  border-radius: 10%;
+  border:1px solid gray
+  
+}
+
+.botones button{
+  margin: 1% auto;
+  background-color:#fff;
+  border: 1px solid #FFC53D;
+  color:#FFC53D;
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  cursor: pointer;
+  
+}
+
+/* The "show" class is added to the filtered elements 
+.show {
+  display: block;
+}
+*/
+/* Style the buttons */
+.btn {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #FFC53D;
+   color: white;
+}
+
+
+.container-banner {
+max-width: 60em;
+min-width: 45em;
+margin: 0 auto;
+padding: 0 2em;
+}
+
+
+
+/*banner*/
+header {
+position: relative;
+background-image: url("https://cdn.pixabay.com/photo/2019/11/09/17/02/burger-4614022_1280.jpg");
+opacity: 0.9;
+background-position: center;
+background-size: cover;
+padding:8em 0 8em;
+z-index: 2;
+max-width: 100%;
+height:80vh;
+}
+
+/*globales*/
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.flex{
+    display: flex;
+}
+
+.local{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.local-container{
+    flex:50%
+}
+
+
+.local-imagen img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.local-container-text{
+    padding:5%;
+}
+
+
+.local-container-text h2{
+    color:#824C00;
+}
+
+.parrafo-importante{
+  font-size: 20px ;
+  line-height: 33px;
+  margin:0 auto;
+  width: 80%;
+  text-align: justify;
+}
+/*carta home*/
+
+.carta-home{
+  width: 100%;
+  text-align: center;
+}
+.carta-home h1{
+  color:#413E4A
+}
+.carta-home img{
+  display:block;
+  margin:0 auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+
+
+/*carrito*/
+#nosotros, #producto_detalle, #login, #noencontrado, #carrito {
+  width: 1100px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  padding: 3.5em 2em;
+  height: 90vh;
+}
+
+.tabla_carrito {
+  margin:0 auto;
+  border: 2px solid #eee;
+  background-color: #fff;
+  width: 80%;
+}
+.tabla_carrito thead {
+  background-color: #28BD64;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+
+.tabla_carrito td{
+  padding: 4px 6px;
+}
+
+.tabla_carrito tbody td{
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.tabla_carrito tbody td:first-child{
+  text-align: left;
+}
+
+.tabla_carrito button{
+  border: 0;
+  background-color: #c66;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 6px;
+  
+}
+
+.tabla_carrito tfoot {
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  text-align: right;
+}
+
+.btnComprar {
+  background-color:#FFC53D;
+  color: #FFF;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  margin:10px auto
+}
+
+/*footer*/
+.footer {
+  display: block;
+  padding: 30px 10px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #eee;
+  font-weight: 600;
+}
+
+/*reservas*/
+
+.form{
+  width:340px;
+  height:550px;
+  background:#e6e6e6;
+  border-radius:8px;
+  box-shadow:0 0 40px -10px #000;
+  margin:calc(50vh - 220px) auto;
+  padding:20px 30px;max-width:calc(100vw - 40px);
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+  position:relative
+}
+
+.form h2{
+  font-size:20px;
+  text-align: center;
+  margin:10px auto;
+  padding-bottom:10px;
+  width:180px;
+  color:#78788c;
+  border-bottom:3px solid #bebed2
+}
+
+.form input{
+  width:100%;
+  padding:10px;
+  box-sizing:border-box;
+  background:none;
+  outline:none;
+  resize:none;
+  border:0;
+  font-family:'Montserrat',sans-serif;
+  transition:all .3s;
+  border-bottom:2px solid #bebed2
+}
+
+.form input:focus{
+  border-bottom:2px solid #78788c
+}
+
+.form p:before{
+  content:attr(type);
+  display:block;
+  margin:28px 0 0;
+  font-size:14px;
+  color:#5a5a5a
+}
+
+.form button{
+  float:right;
+  padding:8px 12px;
+  margin:8px 0 0;
+  font-family:'Montserrat',sans-serif;
+  border:2px solid #78788c;
+  background:0;color:#5a5a6e;
+  cursor:pointer;
+  transition:all .3s}
+
+.form button:hover{background:#78788c;
+  color:#fff}
+.form div{
+  content:'Hi';position:absolute;bottom:-15px;right:-20px;background:#50505a;color:#fff;width:320px;padding:16px 4px 16px 0;border-radius:6px;font-size:13px;box-shadow:10px 10px 40px -14px #000}
