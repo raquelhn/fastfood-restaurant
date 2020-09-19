@@ -2,7 +2,7 @@
   "name": "react-enrutamiento",
   "version": "0.1.0",
   "private": true,
-  "engines":{
+  "engines": {
     "npm": "6.14.4",
     "node": "12.18.0"
   },
@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.0.0",
+    "gh-pages": "^3.1.0",
     "postcss-cli": "^7.1.2",
     "tailwindcss": "^1.8.10"
   }
