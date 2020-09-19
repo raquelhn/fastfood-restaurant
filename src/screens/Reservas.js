@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Footer from '../components/Footer';
+
 
 
 const Reservas = () => {
@@ -48,11 +50,12 @@ const Reservas = () => {
             setEmail("");
             setFecha("");
             setNumerodePersonas(0)
-			alert("Tu compra ha sido satisfactoria!");
+			alert("Tu reserva se logro");
 		});
 	}
 
   return (
+    <>
     <div>
       <form className="form">
         <h2>Reserva con Nosotros</h2>
@@ -63,6 +66,8 @@ const Reservas = () => {
         <button onClick={enviar.bind(this)}>Enviar</button>
         </form>
     </div>
+    <Footer />
+    </>
   )
 }
 

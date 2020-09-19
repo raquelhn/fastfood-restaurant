@@ -3,7 +3,7 @@ import {AppContext} from "../context/appContext";
 
  const PlatoItem = ({ data }) => {
   let {carrito,setCarrito} = useContext(AppContext);
-	let [producto,setProducto] = useState({});
+	
 	let [cantidad,setCantidad] = useState(1);
  
   function updateCantidad(e){

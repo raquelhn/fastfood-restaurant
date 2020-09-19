@@ -1,6 +1,6 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { AppProvider, AppContext } from './context/appContext';
+import { AppProvider} from './context/appContext';
 import Carrito from './screens/Carrito';
 import Home from './screens/Home';
 import Menu from './screens/Menu';
